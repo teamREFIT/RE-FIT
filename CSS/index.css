@@ -9,6 +9,11 @@
   margin: 0;
   padding: 0;
 }
+
+a {
+  text-decoration: none;
+}
+
 /* header start */
 header {
   font-family: 'SpoqaHanSansNeo-Medium';
@@ -23,12 +28,13 @@ header {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  margin-right: 20px;
 }
 
-.header-logo, .header-list {
+.header-logo, 
+.header-list {
   color: #ECEBEC;
   align-items: center;
-  text-decoration: none;
 }
 
 .header-logo {
@@ -45,10 +51,6 @@ header {
 .header-list:hover {
   color: #FFD02D;
   transition: 1s;
-}
-
-.header-list-last {
-  margin-right: 20px;
 }
 /* header end */
 /* main banner start */
