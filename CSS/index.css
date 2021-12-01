@@ -80,10 +80,10 @@ header {
 }
 /* photo slideshow */
 #slideshow {
- width: 500px;
- height: 300px;
+ width: 1440px;
+ height: 705px;
  position: relative;
- margin: 50px auto;
+ /* margin: 50px auto; */
  overflow: hidden;
 }
 
@@ -96,7 +96,7 @@ header {
 }
 
 .slides li:first-child { 
-  margin-left: 100px;
+  /* margin-left: 100px; */
 }
 
 .slides li:not(:last-child) { 
@@ -112,7 +112,7 @@ header {
 .controller span{ 
   position:absolute; 
   background-color: transparent; 
-  color: white; 
+  color:yellow; 
   text-align: center; 
   border-radius: 50%; 
   padding: 10px 20px; 
