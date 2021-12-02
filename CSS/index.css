@@ -22,7 +22,7 @@ a {
 /* header start */
 header {
   font-family: 'SpoqaHanSansNeo-Medium';
-  height: 85px;
+  height: 65px;
   background-color: #2A63A6;
   display: flex;
   flex-flow: row nowrap;
@@ -43,14 +43,15 @@ header {
 }
 
 .header-logo {
-  font-size: 40px;
+  font-size: 30px;
   margin-left: 30px;
-  padding: 20px 0;
+  line-height: 65px;
 }
 
 .header-list {
-  font-size: 30px;
-  padding: 25px 25px;
+  font-size: 20px;
+  padding:0 25px;
+  line-height: 65px;
 }
 
 .header-list:hover {
