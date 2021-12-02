@@ -6,18 +6,22 @@ prev = document.querySelector('.prev');
 next = document.querySelector('.next'); 
 slideWidth = 1440; 
 slideMargin = 0; 
+
 makeClone(); 
 initfunction(); 
+
 function makeClone() { 
   let cloneSlide_first = slideImg[0].cloneNode(true); 
   let cloneSlide_last = slides.lastElementChild.cloneNode(true); 
   slides.append(cloneSlide_first); 
   slides.insertBefore(cloneSlide_last, slides.firstElementChild); 
 } 
+
 function initfunction() { 
   slides.style.width = (slideWidth + slideMargin) * (slideCount + 2) + 'px'; 
   slides.style.left = -(slideWidth + slideMargin) + 'px'; 
 } 
+
 next.addEventListener('click', function () { 
    if (currentIdx <= slideCount - 1) { 
       slides.style.left = -(currentIdx + 2) * (slideWidth + slideMargin) + 'px';
@@ -32,6 +36,7 @@ next.addEventListener('click', function () {
       } 
       currentIdx += 1; 
     }); 
+
     prev.addEventListener('click', function () { 
       console.log(currentIdx); 
       if (currentIdx >= 0) { 
