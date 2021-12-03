@@ -10,125 +10,109 @@
   padding: 0;
   box-sizing: border-box;
 }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ }
+.mySlides {display: none;}
+img {vertical-align: middle;}
 
-li {
-  list-style-type: none;
+
+
+/* Slideshow container */
+.slideshow-container {
+max-width: 1000px;
+position: absolute;
+margin: auto;
+z-index: 3;
 }
 
+/* The dots/bullets/indicators */
+.dot {
+position: relative;
+width: 10px;
+height: 10px;
+background-color:whitesmoke;
+margin: 0 2px;
+display: inline-block;
+border-radius: 50%;
+transition: background-color 0.6s ease;
+z-index: 4;
+
+}
+
+.active {
+background-color:#2A63A6;
+}
+
+/* Fading animation */
+.fade {
+-webkit-animation-duration: 1.5s;
+-webkit-animation-name: fade;
+animation-duration: 1.5s;
+animation-name: fade;
+}
+
+@-webkit-keyframes fade {
+to {opacity: 1}
+from {opacity: .4} 
+}
+
+@keyframes fade {
+to {opacity: 1}
+from {opacity: .4} 
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+}
 a {
-  text-decoration: none;
+text-decoration: none;
 }
 
 /* header start */
 header {
-  font-family: 'SpoqaHanSansNeo-Medium';
-  height: 65px;
-  background-color: #2A63A6;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
+font-family: 'SpoqaHanSansNeo-Medium';
+height: 65px;
+background-color: #2A63A6;
+display: flex;
+flex-flow: row nowrap;
+justify-content: space-between;
 }
 
 .header-all-list {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  margin-right: 20px;
+display: flex;
+flex-flow: row nowrap;
+justify-content: space-between;
+margin-right: 20px;
 }
 
 .header-logo, 
 .header-list {
-  color: #ECEBEC;
-  align-items: center;
+color: #ECEBEC;
+align-items: center;
 }
 
 .header-logo {
-  font-size: 30px;
-  margin-left: 30px;
-  line-height: 65px;
+font-size: 30px;
+margin-left: 30px;
+line-height: 65px;
 }
 
 .header-list {
-  font-size: 20px;
-  padding:0 25px;
-  line-height: 65px;
+font-size: 20px;
+padding:0 25px;
+line-height: 65px;
 }
 
 .header-list:hover {
-  color: #FFD02D;
-  transition: 1s;
+color: #FFD02D;
+transition: 1s;
+}
+
+.asdf {
+position: relative;
+top: 700px;
 }
 /* header end */
-
-/* photo slideshow */
-#slideshow {
- width: 1440px;
- height: 730px;
- position: relative;
- margin: auto;
- overflow: hidden;
- z-index: 1;
-}
-
-.slides {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 1440px;
-  transition: 0.5s ; /*east out 넣으면 점차 빨라짐 */
-}
-
-.slides li:first-child { 
-  margin-left: 0px;
-}
-
-.slides li:not(:last-child) { 
-  float: left; 
-}
-
-.slides li {
-  float: left;
-}
-
-.controller span { 
-  position:absolute; 
-  color:white; 
-  text-align: center; 
-  border-radius: 50%; /* 이게 뭔데 */
-  padding: 10px 20px; 
-  top: 50%; 
-  font-size: 1.3em; 
-  cursor: zoom-in; 
-}  
-
-.controller span:hover { 
-  background-color: rgba(128, 128, 128, 0.11); 
-} 
-
-.prev { 
-  left: 10px; 
-} 
-
-.prev:hover { 
-  transform: translateX(-10px); 
-} 
-
-.next { 
-  right: 10px; 
-} 
-
-.next:hover { 
-  transform: translateX(10px); 
-}
-
-.dot {
-  height: 10px;
-  width: 10px;
-  margin:700px 4px 0 4px;
-  background-color:white;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-  z-index: 2;
-  position: relative;
-} 

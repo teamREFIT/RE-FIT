@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>RE:FIT mainpage</title>
   <link rel="stylesheet" href="./CSS/index.css">
+  
 </head>
 
 <body>
@@ -21,24 +22,34 @@
     </div>
   </header>
   <!-- header end -->
+  
   <!-- main banner start -->
   <main>
-   <div id="slideshow">
-      <ul class="slides">
-        <li><img src="./img/clothes.jpg" alt="" width="1440" height="730"></li>
-        <li><img src="./img/earth.jpeg" alt="" width="1440" height="730"></li>
-        <li><img src="./img/forest.jpg" alt="" width="1440" height="730"></li>
-        <li><img src="./img/sea.jpg" alt="" width="1440" height="730"></li>
-      </ul>
-      <p class="controller">
-        <span class="prev">&lang;</span>
-        <span class="next">&rang;</span>
-      </p>
-      <div style="text-align:center">
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-        <span class="dot"></span> 
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <img src="./img/clothes.jpg" width="1440" height="730" >
       </div>
+  
+      <div class="mySlides fade">
+        <img src="./img/earth.jpeg" width="1440" height="730">
+      </div>
+  
+      <div class="mySlides fade">
+        <img src="./img/forest.jpg" width="1440" height="730">
+      </div>
+  
+      <div class="mySlides fade">
+        <img src="./img/sea.jpg" width="1440" height="730">
+      </div>
+  
+    </div>
+    
+    <div class="asdf" style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
     </div>
     <script src="./index.js"></script>
   </main>
