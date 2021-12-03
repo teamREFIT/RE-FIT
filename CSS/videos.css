@@ -54,3 +54,43 @@ header {
   transition: 1s;
 }
 /* header end */
+/* video gallery start */
+.grid-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.grid-item {
+  font-family: 'SpoqaHanSansNeo-Medium';
+  width: 400px;
+  height: 410px;
+}
+
+.video {
+  width: 400px;
+  height: 250px;
+  background-color: gray;
+}
+
+.title {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.text {
+  font-size: 15px;
+}
+
+.space {
+  height: 20px;
+}
+
+.maker {
+  font-size: 12px;
+}
+
+.day {
+  margin-left: 240px;
+}
