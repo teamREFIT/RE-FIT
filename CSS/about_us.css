@@ -258,7 +258,7 @@ header {
   display: flex;
   height: 13em;
   width: 13em;
-  background-color: indigo;
+  background-color: lightgray;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
@@ -273,5 +273,5 @@ header {
 }
 
 .circle_subtitle {
-  margin: 12px 10% 30px 10%;
+  margin: 12px 10% 45px 10%;
 }
