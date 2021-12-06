@@ -199,7 +199,7 @@ header {
 #ocean {
   position: relative;
   width: 100%;
-  height: 650px;
+  height: 600px;
   font-family: 'SpoqaHanSansNeo';
   color: white;
 }
@@ -216,10 +216,23 @@ header {
   z-index: -1;
 }
 
+.text_margin {
+  margin: 0 10% 0 10%;
+}
+
 .ocean_block {
   display: flex;
   justify-content: space-between;
   font-family: 'SpoqaHanSansNeo';
+}
+
+.ocean_title {
+  font-size: 50px;
+  padding-top: 40px;
+}
+
+.ocean_subtitle {
+  margin-bottom: 70px;
 }
 
 .ocean_text_big {
@@ -231,11 +244,34 @@ header {
   font-size: 30px;
 }
 
-.ocean_margin {
-  margin: 0 10% 0 10%;
+.paragraph_text_left {
+  font-size: 25px;
+  font-family: 'SpoqaHanSansNeo-Light';
 }
 
-.paragraph_text_left {
-  font-size: 20px;
-  font-family: 'SpoqaHanSansNeo-Light';
+.circle_flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.circle {
+  display: flex;
+  height: 13em;
+  width: 13em;
+  background-color: indigo;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle_inner_text {
+  font-size: 30px;
+}
+
+.circle_margin {
+  margin: 0 14% 0 14%;
+}
+
+.circle_subtitle {
+  margin: 12px 10% 30px 10%;
 }
