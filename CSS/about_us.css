@@ -5,6 +5,10 @@
   font-style: normal;
 }
 
+html {
+  font-size: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +21,7 @@ a {
 /* header start */
 header {
   font-family: 'SpoqaHanSansNeo-Medium';
-  height: 65px;
+  height: 6.5rem;
   background-color: #2A63A6;
   display: flex;
   flex-flow: row nowrap;
@@ -28,7 +32,7 @@ header {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  margin-right: 20px;
+  margin-right: 2rem;
 }
 
 .header-logo,
@@ -38,15 +42,15 @@ header {
 }
 
 .header-logo {
-  font-size: 30px;
-  margin-left: 30px;
-  line-height: 65px;
+  font-size: 3rem;
+  margin-left: 3rem;
+  line-height: 6.5rem;
 }
 
 .header-list {
-  font-size: 20px;
-  padding: 0 25px;
-  line-height: 65px;
+  font-size: 2rem;
+  padding: 0 2.5rem;
+  line-height: 6.5rem;
 }
 
 .header-list:hover {
@@ -58,14 +62,14 @@ header {
 
 .size {
   width: 100%;
-  height: 800px;
+  height: 80rem;
 }
 
 /* image banner start */
 .main_banner {
   position: relative;
   width: 100%;
-  height: 735px;
+  height: 73.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,25 +77,25 @@ header {
 
 .main_banner::before {
   content: "";
-  background-image: url(./img/teamProto.jpg);
+  background-image: url(../img/teamProto.jpg);
   background-size: cover;
   opacity: 0.75;
   position: absolute;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   z-index: -1;
 }
 
 .main_image {
   width: 100%;
-  height: 600px;
+  height: 60rem;
 }
 
 .main_text {
   font-family: 'SpoqaHanSansNeo-Bold';
-  font-size: 150px;
+  font-size: 15rem;
   padding-bottom: 4%;
 }
 
@@ -99,13 +103,13 @@ header {
 
 .title_text {
   font-family: 'SpoqaHanSansNeo-Bold';
-  font-size: 75px;
+  font-size: 7.5rem;
   text-align: center;
 }
 
 #title_text_small {
   font-family: 'SpoqaHanSansNeo-Bold';
-  font-size: 50px;
+  font-size: 5rem;
   text-align: center;
 }
 
@@ -117,39 +121,39 @@ header {
 }
 
 .what_we_do {
-  padding-top: 60px;
-  margin-bottom: 24px;
+  padding-top: 6rem;
+  margin-bottom: 2.4rem;
 }
 
 .paragraph_text {
   text-align: center;
-  font-size: 20px;
+  font-size: 2rem;
   font-family: 'SpoqaHanSansNeo-Light';
-  margin-bottom: 80px;
+  margin-bottom: 8rem;
 }
 
 .fashion_box {
   background-color: #2A63A6;
   width: 100%;
-  height: 800px;
+  height: 80rem;
 }
 
 .environment_boxes {
-  margin: 50px 100px 0 100px;
+  margin: 5rem 10rem 0 10rem;
   display: flex;
   justify-content: space-around;
 }
 
 .environment_box_text {
   font-family: 'SpoqaHanSansNeo-Light';
-  font-size: 50px;
+  font-size: 5rem;
   font-weight: 500;
 }
 
 #water_box {
   position: relative;
-  width: 280px;
-  height: 280px;
+  width: 28rem;
+  height: 28rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -157,7 +161,7 @@ header {
 
 #water_box::before {
   content: "";
-  background-image: url(./img/water.jpg);
+  background-image: url(../img/water.jpg);
   background-size: cover;
   opacity: 0.50;
   position: absolute;
@@ -170,8 +174,8 @@ header {
 
 #carbon_box {
   position: relative;
-  width: 280px;
-  height: 280px;
+  width: 28rem;
+  height: 28rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -179,7 +183,7 @@ header {
 
 #carbon_box::before {
   content: "";
-  background-image: url(./img/carbonEmission.jpg);
+  background-image: url(../img/carbonEmission.jpg);
   background-size: cover;
   opacity: 0.80;
   position: absolute;
@@ -192,8 +196,8 @@ header {
 
 #third_box {
   position: relative;
-  width: 280px;
-  height: 280px;
+  width: 28rem;
+  height: 28rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -201,7 +205,7 @@ header {
 
 #third_box::before {
   content: "";
-  background-image: url(./img/turtle.jpg);
+  background-image: url(../img/turtle.jpg);
   background-size: cover;
   opacity: 0.70;
   position: absolute;
@@ -215,14 +219,14 @@ header {
 #ocean {
   position: relative;
   width: 100%;
-  height: 600px;
+  height: 60rem;
   font-family: 'SpoqaHanSansNeo';
   color: white;
 }
 
 #ocean::before {
   content: "";
-  background-image: url(./img/waterOcean.jpg);
+  background-image: url(../img/waterOcean.jpg);
   background-size: cover;
   position: absolute;
   top: 0px;
@@ -243,25 +247,25 @@ header {
 }
 
 .ocean_title {
-  font-size: 50px;
-  padding-top: 40px;
+  font-size: 5rem;
+  padding-top: 4rem;
 }
 
 .ocean_subtitle {
-  margin-bottom: 70px;
+  margin-bottom: 7rem;
 }
 
 .ocean_text_big {
   font-weight: bold;
-  font-size: 80px;
+  font-size: 8rem;
 }
 
 .ocean_text_small {
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 .paragraph_text_left {
-  font-size: 25px;
+  font-size: 2.5rem;
   font-family: 'SpoqaHanSansNeo-Light';
 }
 
@@ -272,8 +276,8 @@ header {
 
 .circle {
   display: flex;
-  height: 13em;
-  width: 13em;
+  height: 13rem;
+  width: 13rem;
   background-color: lightgray;
   border-radius: 50%;
   justify-content: center;
@@ -281,7 +285,7 @@ header {
 }
 
 .circle_inner_text {
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 .circle_margin {
@@ -289,5 +293,5 @@ header {
 }
 
 .circle_subtitle {
-  margin: 12px 10% 45px 10%;
+  margin: 1.2rem 10% 4.5rem 10%;
 }
