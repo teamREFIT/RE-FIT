@@ -270,14 +270,15 @@ header {
 }
 
 .circle_flex {
+  margin: 0 18vw;
   display: flex;
   justify-content: space-between;
 }
 
 .circle {
   display: flex;
-  height: 13rem;
-  width: 13rem;
+  height: 18rem;
+  width: 18rem;
   background-color: lightgray;
   border-radius: 50%;
   justify-content: center;
@@ -289,9 +290,10 @@ header {
 }
 
 .circle_margin {
-  margin: 0 14% 0 14%;
+  margin: 0 18% 0 18%;
 }
 
 .circle_subtitle {
+
   margin: 1.2rem 10% 4.5rem 10%;
 }
