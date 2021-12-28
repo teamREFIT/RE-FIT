@@ -15,111 +15,207 @@ html {
   box-sizing: border-box;
 }
 
-.mySlides{
+.mySlides {
   width: 100vw;
-  height: 90vh;
+  height: 92vh;
   overflow: hidden;
 }
 
 
-img{
+img {
   vertical-align: middle;
 }
 
 /* Slideshow container */
-.slideshow-container{
-max-width: 100%;
-position: absolute;
-margin: auto;
-z-index: 3;
+.slideshow-container {
+  max-width: 100%;
+  position: absolute;
+  margin: auto;
+  z-index: 3;
+}
+
+.clothes1 {
+  position: absolute;
+  width: 26.25vw;
+  height: 9.8611vw;
+  left: 33.6806vw;
+  top: 17.3611vw;
+  font-style: normal;
+  font-size: 10.4167vw;
+  line-height: 11.0417vw;
+  color: white;
+  font-weight: bold;
+  font-family: 'futura';
+}
+
+.clothes2 {
+  position: absolute;
+  width: 32.7083vw;
+  height: 2.6389vw;
+  left: 34.1667vw;
+  top: 29.8611vw;
+  color: white;
+  font-family: 'Spoqa Han Sans Neo';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.7778vw;
+}
+
+.sea {
+  position: absolute;
+  width: 41.1806vw;
+  height: 11.0417vw;
+  left: 29.8611vw;
+  top: 17.0139vw;
+  color: white;
+  font-family: 'Futura';
+  font-style: bold;
+  font-weight: bold;
+  font-size: 8.75vw;
+  line-height: 11.0417vw;
+}
+
+.nature {
+  position: absolute;
+  width: 41.1806vw;
+  height: 11.0417vw;
+  left: 29.375vw;
+  top: 17.0139vw;
+  color: white;
+  font-family: 'Futura';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 8.75vw;
+  line-height: 11.0417vw;
+}
+
+.earth {
+  position: absolute;
+  width: 41.1806vw;
+  height: 11.0417vw;
+  left: 29.375vw;
+  top: 17.0139vw;
+  color: white;
+  font-family: 'Futura';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 8.75vw;
+  line-height: 11.0417vw;
+}
+
+.clothes {
+  position: absolute;
+  width: 28.4028vw;
+  height: 3.6806vw;
+  left: 36.6667vw;
+  top: 29.0278vw;
+  color: white;
+  font-family: 'Futura';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.7778vw;
+  line-height: 3.6806vw;
 }
 
 /* The dots/bullets/indicators */
-.dot{
-position: relative;
-width: 1rem;
-height: 1rem;
-background-color:white;
-margin: 0 2px;
-display: inline-block;
-border-radius: 50%;
-transition: background-color 0.6s ease;
-z-index: 4;
-top: 88vh;
+.dot {
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+  background-color: white;
+  margin: 0 0.1389vw;
+  display: inline-block;
+  border-radius: 50%;
+  transition: 0.6s ease;
+  z-index: 4;
+  top: 88vh;
 }
 
-  
-.active{
-background-color:#2A63A6;
+
+.active {
+  background-color: #2A63A6;
 }
 
 /* Fading animation */
-.fade{
--webkit-animation-duration: 1.5s;
--webkit-animation-name: fade;
-animation-duration: 1.5s;
-animation-name: fade;
+.fade {
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-name: fade;
+  animation-duration: 1.5s;
+  animation-name: fade;
 }
 
-@-webkit-keyframes fade{
-to {opacity: 1}
-from {opacity: .4} 
+@-webkit-keyframes fade {
+  to {
+    opacity: 1
+  }
+
+  from {
+    opacity: .4
+  }
 }
 
-@keyframes fade{
-to {opacity: 1}
-from {opacity: .4} 
+@keyframes fade {
+  to {
+    opacity: 1
+  }
+
+  from {
+    opacity: .4
+  }
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px){
+@media only screen and (max-width: 300px) {}
+
+a {
+  text-decoration: none;
 }
 
-a{
-text-decoration: none;
-}
-
-body{
+body {
   overflow: hidden;
 }
 
+
+
+
 /* header start */
-header{
-font-family: 'SpoqaHanSansNeo-Medium';
-height: 6.5rem;
-background-color: #2A63A6;
-display: flex;
-flex-flow: row nowrap;
-justify-content: space-between;
+header {
+  font-family: 'SpoqaHanSansNeo-Medium';
+  height: 6.5rem;
+  background-color: #2A63A6;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
 }
 
-.header-all-list{
-display: flex;
-flex-flow: row nowrap;
-justify-content: space-between;
-margin-right: 2rem;
+.header-all-list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-right: 2rem;
 }
 
-.header-logo, 
-.header-list{
-color: #ECEBEC;
-align-items: center;
+.header-logo,
+.header-list {
+  color: #ECEBEC;
+  align-items: center;
 }
 
-.header-logo{
-font-size: 3rem;
-margin-left: 3rem;
-line-height: 6.5rem;
+.header-logo {
+  font-size: 3rem;
+  margin-left: 3rem;
+  line-height: 6.5rem;
 }
 
-.header-list{
-font-size: 2rem;
-padding:0 2.5rem;
-line-height: 6.5rem;
+.header-list {
+  font-size: 2rem;
+  padding: 0 2.5rem;
+  line-height: 6.5rem;
 }
 
-.header-list:hover{
-color: #FFD02D;
-transition: 1s;
+.header-list:hover {
+  color: #FFD02D;
+  transition: 1s;
 }
+
 /* header end */
