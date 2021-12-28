@@ -73,7 +73,6 @@ main {
 .member-container {
   width: 25rem;
   height: 25rem;
-  transition: transform 1s;
 }
 
 .member-img {
@@ -82,7 +81,6 @@ main {
   width: 100%;
   height: 100%;
   border-radius: 1rem;
-  transition: transform 1s;
 }
 
 .member-img-hover {
@@ -127,15 +125,10 @@ main {
 }
 
 .member-container:hover .member-back {
-  transform: translateY(3rem);
-}
-
-.member-container:hover .member-img {
-  transform: translateY(-3rem);
+  transform: translateY(6rem);
 }
 
 .member-container:hover .member-img-hover {
   opacity: 1;
   transition: 1s;
-  transform: translateY(-3rem);
 }
