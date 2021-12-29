@@ -22,9 +22,9 @@ body {
 a {
   text-decoration: none;
 }
-
 /* header start */
 header {
+  font-family: 'SpoqaHanSansNeo-Medium';
   height: 6.5rem;
   background-color: #2A63A6;
   display: flex;
@@ -39,7 +39,7 @@ header {
   margin-right: 2rem;
 }
 
-.header-logo, 
+.header-logo,
 .header-list {
   color: #ECEBEC;
   align-items: center;
@@ -53,7 +53,7 @@ header {
 
 .header-list {
   font-size: 2rem;
-  padding:0 2rem;
+  padding: 0 2.5rem;
   line-height: 6.5rem;
 }
 
@@ -61,6 +61,7 @@ header {
   color: #FFD02D;
   transition: 1s;
 }
+
 /* header end */
 /* team member container */
 main {
