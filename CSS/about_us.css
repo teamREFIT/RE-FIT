@@ -41,7 +41,7 @@ a {
 }
 
 /* header start */
-header {
+.header {
   font-family: 'SpoqaHanSansNeo-Medium';
   height: 6.5rem;
   background-color: #2A63A6;
@@ -351,4 +351,33 @@ header {
 
 .text_side_margin {
   margin: 0 5rem
+}
+
+.compare {
+  margin: 5rem 10rem 0 10rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+#clothes_circle {
+  position: relative;
+  width: 28rem;
+  height: 28rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+#clothes_circle::before {
+  content: "";
+  background-image: url(../img/carbonEmission.jpg);
+  background-size: cover;
+  opacity: 0.80;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 2;
 }
