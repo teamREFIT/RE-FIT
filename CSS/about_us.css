@@ -5,30 +5,29 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'SpoqaHanSansNeo-Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SpoqaHanSansNeo-Thin';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Thin.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
   text-decoration: none;
+  font-family: 'SpoqaHanSansNeo-Medium';
 }
 
 html {
   font-size: 10px;
-}
-
-.container {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-  overflow: auto;
-}
-
-.content {
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  scroll-snap-align: start;
 }
 
 * {
@@ -40,10 +39,41 @@ a {
   text-decoration: none;
 }
 
+/* global */
+  .container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    overflow: auto;
+  }
+
+  .page {
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+  }
+
+  .first-page {
+    scroll-snap-align: start;
+  }
+
+  .page-box {
+    width: 120rem;
+    margin: auto;
+  }
+
+  .first-page {
+    height: 100vh;
+  }
+  
+/* global */
+
 /* header start */
 .header {
   font-family: 'SpoqaHanSansNeo-Medium';
-  height: 6.5rem;
+  height: 9.17%;
   background-color: #2A63A6;
   display: flex;
   flex-flow: row nowrap;
@@ -79,305 +109,409 @@ a {
   color: #FFD02D;
   transition: 1s;
 }
-
 /* header end */
 
+/* main page */
+  .main-page {
+    height: 90.83%;
+    background-size: 100%;
+    background-position: center;
+    background-image: url(../img/team-photo.jpeg);
+  }
 
-/* image banner start */
-.main_banner {
-  position: relative;
-  width: 100%;
-  height: 91.7vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  .main-page-text {
+    font-size: 10rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    line-height: 90.83vh;
+  }
+/* main page */
+
+/* what we do page */
+  .what-we-do-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .what-we-do-page-text-box {
+    text-align: center;
+  }
+
+  .what-we-do-page-title-text {
+    font-size: 7.5rem;
+    font-weight: bold;
+  }
+
+  .what-we-do-page-text {
+    font-size: 3rem;
+    font-family: 'SpoqaHanSansNeo-Thin';
+  }
+/* what we do page */
+
+/* graph page */
+  .graph-page {
+    background-color: #2A63A6;
+    display: flex;
+  }
+
+  .graph-page-box {
+    width: 100rem;
+    margin: auto;
+  }
+
+  .graph-page-text-box {
+    margin-bottom: 4rem;
+  }
+
+  .graph-page-title-text,
+  .graph-page-body-text {
+    color: white;
+  }
+
+  .graph-page-title-text {
+    font-size: 3rem;
+  }
+
+  .graph-page-body-text {
+    font-size: 2rem;
+    font-family: 'SpoqaHanSansNeo-Thin';
+  }
+
+  .graph-page-graph-box1 {
+    display: flex;
+    margin: 5rem 0;
+  }
+
+  .graph-page-graph-box-text {
+    font-size: 4rem;
+    color: #F9CD50;
+    width: 13rem;
+    text-align: left;
+  }
+
+  .graph-page-graph-box1-graph {
+    height: 5rem;
+    width: 20rem;
+    background-color: #F9CD50;
+  }
+
+  .graph-page-graph-box2-graph {
+    height: 5rem;
+    width: 85rem;
+    background-color: #F9CD50;
+  }
+
+  .graph-page-bottom-text {
+    text-align: center;
+  }
+/* graph page */
+
+/* environment page */
+  .environment-page {
+    position: relative;
+    text-align: center;
+    display: flex;
+  }
+
+  .environment-page-box {
+    width: 80rem;
+    margin: auto;
+  }
+
+  .environment-page-title-text {
+    font-size: 7rem;
+    font-weight: bold;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    margin-left: -21.704rem;
+    /* margin-bottom: 4rem; */
+  }
+
+  .environment-page-img-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+  }
+
+  .environment-page-img {
+    position: relative;
+    z-index: 1;
+    width: 30rem;
+    height: 30rem;
+    background-image: url(../img/water.jpg);
+    background-size: 150%;
+  }
+
+  .environment-page-img2 {
+    position: relative;
+    z-index: 1;
+    width: 30rem;
+    height: 30rem;
+    background-image: url(../img/carbonEmission.jpg);
+    background-size: 150%;
+  }
+
+  .environment-page-img-text {
+    font-size: 4rem;
+    text-align: center;
+    line-height: 30rem;
+  }
+/* environment page */
+
+/* water page */
+  .water-page {
+    position: relative;
+    z-index: 1;
+    background-image: url(../img/water.jpg);
+    background-size: 100%;
+    background-position: center;
+  }
+
+  .water-page-background-color {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+  }
+
+  .water-page-title-text,
+  .water-page-text,
+  .water-page-flex-text,
+  .water-page-flex-title-text,
+  .water-page-body-text {
+    color: white;
+  }
+
+  .water-page-title-text {
+    position: relative;
+    z-index: 3;
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+  }
+
+   .water-page-text{
+    font-size: 3rem;
+    font-family: 'SpoqaHanSansNeo-Thin';
+    margin-bottom: 6rem;
+  }
+
+  .water-page-flex-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6rem;
+  }
+
+  .water-page-flex {
+    position: relative;
+  }
+
+  .water-page-flex-text {
+    text-align: center;
+    font-size: 4rem;
+  }
+
+  .water-page-flex-title-text {
+    text-align: center;
+    font-size: 10rem;
+  }
+
+  .water-page-body-text {
+    font-size: 3rem;
+    font-family: 'SpoqaHanSansNeo-Thin';
+    margin-bottom: 5rem;
+  }
+/* water page */
+
+/* plastic page */
+  .plastic-page {
+    display: flex;
+  }
+
+  .plastic-page-title-text {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .plastic-page-text {
+    font-size: 3rem;
+    font-family: 'SpoqaHanSansNeo-Thin';
+    margin-bottom: 7rem;
+  }
+
+  .plastic-page-flex-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7rem;
+  }
+
+  .plastic-page-flex {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50rem;
+    background-color: gray;
+  }
+
+  .plastic-page-flex-text {
+    font-size: 3rem;
+    text-align: center;
+    line-height: 25rem;
+  }
+
+  .plastic-page-body-text {
+    font-size: 3rem;
+    font-family: 'SpoqaHanSansNeo-Thin';
+    margin-bottom: 4rem;
+  }
+/* plastic page */
+
+/* carbon emission page */
+  .carbon-emission-page {
+    background-image: url(../img/pollution_section.jpg);
+    background-size: 100%;
+    background-position: center;
+    display: flex;
+  }
+
+  .carbon-emission-page-box {
+    margin: auto;
+  }
+
+  .carbon-emission-page-title-text,
+  .carbon-emission-page-body-text,
+  .carbon-emission-page-main-text-box-text1,
+  .carbon-emission-page-main-text-box-text2 {
+    color: white;
+  }
+
+  .carbon-emission-page-title-text {
+    font-size: 7rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .carbon-emission-page-body-text {
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'SpoqaHanSansNeo-Thin';
+    margin-bottom: 2rem;
+  }
+
+  .carbon-emission-page-main-text-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .carbon-emission-page-main-text-box-text1 {
+    font-size: 4rem;
+    line-height: 12rem;
+  }
+
+  .carbon-emission-page-main-text-box-text2 {
+    font-size: 12rem;
+  }
+
+  .carbon-emission-page-flex-box {
+    display: flex;
+    justify-content: space-between;
+    width: 60rem;
+    margin: auto;
+  }
+
+  .carbon-emission-page-flex-box-img {
+    background-color: gray;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+  }
+
+  .carbon-emission-page-img {
+    height: 10rem;
+    margin: 5rem 0;
+  }
+
+  .carbon-emission-page-flex-box-img-text {
+    text-align: center;
+    line-height: 20rem;
+    font-size: 3rem;
+  }
+/* carbon emission page */
+
+/* how page */
+  .how-page {
+    background-color: #2A63A6;
+  }
+
+  .how-page-title-text {
+    font-size: 10rem;
+    color: #F7D153;
+    text-align: center;
+    line-height: 100vh;
+  }
+/* how page */
+
+/* refit page */
+.refit-page {
+  
 }
 
-.main_banner::before {
-  content: "";
-  background-image: url(../img/teamProto.jpg);
-  background-size: cover;
-  opacity: 0.75;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
-}
-
-.main_image {
-  width: 100%;
-  height: 60rem;
-}
-
-.main_text {
-  font-family: 'SpoqaHanSansNeo-Bold';
-  font-size: 15rem;
-  padding-bottom: 4%;
-}
-
-/* image banner end */
-
-.title_text {
-  font-family: 'SpoqaHanSansNeo-Bold';
-  font-size: 7.5rem;
-  text-align: center;
-}
-
-#title_text_small {
-  font-family: 'SpoqaHanSansNeo-Bold';
-  font-size: 5rem;
-  text-align: center;
-}
-
-.size_flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* align-items: center; */
-}
-
-.what_we_do {
-  padding-top: 6rem;
-  margin-bottom: 2.4rem;
-}
-
-.paragraph_text {
-  text-align: center;
-  font-size: 2rem;
-  font-family: 'SpoqaHanSansNeo-Light';
-  margin-bottom: 8rem;
-}
-
-.fashion_box {
-  background-color: #2A63A6;
-  width: 100%;
-  height: 80rem;
-}
-
-.environment_boxes {
-  margin: 5rem 10rem 0 10rem;
-  display: flex;
-  justify-content: space-around;
-}
-
-.environment_box_text {
-  font-family: 'SpoqaHanSansNeo-Light';
-  font-size: 5rem;
-  font-weight: 500;
-}
-
-#water_box {
-  position: relative;
-  width: 28rem;
-  height: 28rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#water_box::before {
-  content: "";
-  background-image: url(../img/water.jpg);
-  background-size: cover;
-  opacity: 0.50;
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  z-index: -1;
-}
-
-#carbon_box {
-  position: relative;
-  width: 28rem;
-  height: 28rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#carbon_box::before {
-  content: "";
-  background-image: url(../img/carbonEmission.jpg);
-  background-size: cover;
-  opacity: 0.80;
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  z-index: -1;
-}
-
-#third_box {
-  position: relative;
-  width: 28rem;
-  height: 28rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#third_box::before {
-  content: "";
-  background-image: url(../img/turtle.jpg);
-  background-size: cover;
-  opacity: 0.70;
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  z-index: -1;
-}
-
-#ocean {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  font-family: 'SpoqaHanSansNeo';
-  color: white;
-}
-
-#ocean::before {
-  content: "";
-  background-image: url(../img/waterOcean.jpg);
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  z-index: -1;
-}
-
-.text_margin {
-  margin: 0 10% 0 10%;
-}
-
-.ocean_block {
-  margin-top: 3rem;
-  display: flex;
-  justify-content: space-between;
-  font-family: 'SpoqaHanSansNeo';
-}
-
-.ocean_title {
-  font-size: 6rem;
-  padding-top: 8rem;
-}
-
-.ocean_subtitle {
-  margin-bottom: 7rem;
-}
-
-.ocean_text_big {
-  font-weight: bold;
-  font-size: 12rem;
-}
-
-.ocean_text_small {
+.refit-page-text {
   font-size: 3rem;
 }
 
-.paragraph_text_left {
-  font-size: 2rem;
-  font-family: 'SpoqaHanSansNeo-Light';
-}
+.refit-page-arrow-img {
 
-.circle_flex {
-  margin: 0 25vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
+/* refit page */
 
-.circle {
-  display: flex;
-  height: 25rem;
-  width: 25rem;
-  background-color: lightgray;
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-}
+/* refit page 2 */
+  .refit-page2 {
 
-.circle_inner_text {
-  font-size: 4rem;
-}
+  }
 
-.circle_margin {
-  margin: 0 15% 0 15%;
-}
+  .refit-page2-text {
+    font-size: 3rem;
+  }
 
-.circle_subtitle {
-  margin: 1.2rem 10% 12rem 10%;
-}
 
-.arrow_right {
-  width: 5vw;
-  height: 2vw;
-}
+/* refit page 2 */
 
-.carbs {
-  background-image: url(../img/pollution_section.jpg);
-}
+/* video page */
+  .video-page {
+    background-color: #2A63A6;
+  }
 
-.carbs_title {
-  font-size: 7rem;
-  font-weight: bolder;
-  text-align: center;
-  padding-top: 4rem;
-}
+  .video-page-video-box {
+    display: flex;
+    justify-content: space-between;
+    width: 120rem;
+    margin: auto;
+  }
 
-.carbs_paragraph {
-  margin-top: 4rem;
-  margin-bottom: 6rem;
-  font-size: 2.3rem;
-  color: white;
-  font-weight: lighter;
-}
+  .video-page-title-text {
+    color: white;
+  }
 
-.carbs_statement {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  margin-bottom: 3rem;
-}
+  .video-page-title-text {
+    font-size: 10rem;
+    text-align: center;
+  }
 
-.text_side_margin {
-  margin: 0 5rem
-}
+  .video-page-video {
+    width: 50rem;
+    height: 30rem;
+    background-color: gray;
+  }
 
-.compare {
-  margin: 5rem 10rem 0 10rem;
-  display: flex;
-  justify-content: space-around;
-}
-
-#clothes_circle {
-  position: relative;
-  width: 28rem;
-  height: 28rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 3;
-}
-
-#clothes_circle::before {
-  content: "";
-  background-image: url(../img/carbonEmission.jpg);
-  background-size: cover;
-  opacity: 0.80;
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  z-index: 2;
-}
+  .video-page-text {
+    font-size: 3rem;
+    width: 65rem;
+  }
+/* video page */
