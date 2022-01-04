@@ -73,7 +73,7 @@ a {
 /* header start */
 .header {
   font-family: 'SpoqaHanSansNeo-Medium';
-  height: 9.17%;
+  height: 8.24%;
   background-color: #2A63A6;
   display: flex;
   flex-flow: row nowrap;
@@ -113,8 +113,8 @@ a {
 
 /* main page */
   .main-page {
-    height: 90.83%;
-    background-size: 100%;
+    height: 91.76%;
+    background-size: 110%;
     background-position: center;
     background-image: url(../img/team-photo.jpeg);
   }
