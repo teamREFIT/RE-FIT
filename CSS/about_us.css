@@ -452,14 +452,14 @@ a {
   width: 20rem;
   height: 20rem;
   border-radius: 50%;
-}
-
-.carbon-emission-page-flex-box-img:nth-child(1) {
   background-image: url(../img/clothesHanger.jpeg);
   background-size: cover;
 }
 
-.carbon-emission-page-flex-box-img:nth-child(2) {
+.carbon-emission-page-flex-box-img2 {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
   background-image: url(../img/shipping.png);
   background-size: cover;
 }
@@ -473,6 +473,7 @@ a {
   text-align: center;
   line-height: 20rem;
   font-size: 3rem;
+  color: #fff;
 }
 
 /* carbon emission page */
