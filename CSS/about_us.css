@@ -534,27 +534,28 @@ a {
   display: flex;
   justify-content: space-between;
   width: 120rem;
-  margin: auto;
+  margin: 10rem auto;
+
 }
 
 .video-page-title-text {
   color: white;
-}
-
-.video-page-title-text {
   font-size: 10rem;
+  padding-top: 4rem;
   text-align: center;
 }
 
 .video-page-video {
   width: 50rem;
   height: 30rem;
-  background-color: gray;
+  background-image: url(../img/영상\ 임시\ 사진.png);
 }
 
 .video-page-text {
-  font-size: 3rem;
+  font-size: 2.5rem;
   width: 65rem;
+  color: white;
+  font-weight: 300;
 }
 
 /* video page */
