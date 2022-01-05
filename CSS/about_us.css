@@ -369,12 +369,12 @@ a {
 }
 
 .plastic-page-flex:nth-child(2) {
-  background-image: url(../img/nick-de-partee-5DLBoEX99Cs-unsplash.jpg);
+  background-image: url(../img/washingMachine.jpg);
   background-size: cover;
 }
 
 .plastic-page-flex:nth-child(3) {
-  background-image: url(../img/nick-de-partee-5DLBoEX99Cs-unsplash.jpg);
+  background-image: url(../img/수질오염.jpeg);
   background-size: cover;
 }
 
@@ -449,10 +449,19 @@ a {
 }
 
 .carbon-emission-page-flex-box-img {
-  background-color: gray;
   width: 20rem;
   height: 20rem;
   border-radius: 50%;
+}
+
+.carbon-emission-page-flex-box-img:nth-child(1) {
+  background-image: url(../img/clothesHanger.jpeg);
+  background-size: cover;
+}
+
+.carbon-emission-page-flex-box-img:nth-child(2) {
+  background-image: url(../img/shipping.png);
+  background-size: cover;
 }
 
 .carbon-emission-page-img {
