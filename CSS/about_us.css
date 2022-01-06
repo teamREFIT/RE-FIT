@@ -19,11 +19,32 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'GmarketSansBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GmarketSansLight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
   text-decoration: none;
-  font-family: 'SpoqaHanSansNeo-Medium';
+  font-family: 'GmarketSansMedium';
 }
 
 html {
@@ -121,6 +142,7 @@ a {
 }
 
 .main-page-text {
+  font-family: 'GmarketSansBold';
   font-size: 10rem;
   font-weight: bold;
   color: white;
@@ -148,7 +170,7 @@ a {
 
 .what-we-do-page-text {
   font-size: 3rem;
-  font-family: 'SpoqaHanSansNeo-Thin';
+  font-family: 'GmarketSansLight';
 }
 
 /* what we do page */
@@ -454,6 +476,7 @@ a {
   border-radius: 50%;
   background-image: url(../img/clothesHanger.jpeg);
   background-size: cover;
+  background-position: center;
 }
 
 .carbon-emission-page-flex-box-img2 {
@@ -462,6 +485,8 @@ a {
   border-radius: 50%;
   background-image: url(../img/shipping.png);
   background-size: cover;
+  background-position: center;
+
 }
 
 .carbon-emission-page-img {
@@ -475,6 +500,14 @@ a {
   font-size: 3rem;
   color: #fff;
 }
+
+.carbon-emission-page-flex-box-img-text2 {
+  text-align: center;
+  line-height: 20rem;
+  font-size: 3rem;
+  color: navy;
+}
+
 
 /* carbon emission page */
 
@@ -533,6 +566,7 @@ a {
 .video-page-video-box {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 120rem;
   margin: 10rem auto;
 
@@ -546,16 +580,17 @@ a {
 }
 
 .video-page-video {
-  width: 50rem;
-  height: 30rem;
-  background-image: url(../img/영상\ 임시\ 사진.png);
+  width: 60rem;
+  height: 35rem;
+  border: black 1px solid;
 }
 
 .video-page-text {
   font-size: 2.5rem;
-  width: 65rem;
+  width: 55rem;
   color: white;
   font-weight: 300;
+  padding-bottom: 5rem;
 }
 
 /* video page */
