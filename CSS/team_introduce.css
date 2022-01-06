@@ -66,14 +66,17 @@ header {
 /* team member container */
 main {
   display: flex;
+  height: 93.5vh;
   justify-content: space-around;
-  height: 80vh;
   align-items: center;
+  background-image: url(../img/team-photo.jpeg);
+  background-size: 100%;
+  background-position: center;
 }
 
 .member-container {
-  width: 25rem;
-  height: 25rem;
+  width: 35rem;
+  height: 35rem;
 }
 
 .member-img {
@@ -87,7 +90,7 @@ main {
 .member-img-hover {
   z-index: 4;
   position: relative;
-  top: -25.3rem;
+  top: -35.3rem;
   width: 100%;
   height: 100%;
   opacity: 0;
@@ -97,7 +100,7 @@ main {
 
 .member-img-hover p {
   text-align: center;
-  line-height: 25rem;
+  line-height: 35rem;
   color: white;
   font-size: 3rem;
 }
@@ -105,8 +108,8 @@ main {
 .member-back {
   z-index: 2;
   position: relative;
-  top: -32rem;
-  width: 25rem;
+  top: -45rem;
+  width: 35rem;
   padding-top: 1rem;
   line-height: 7.5rem;
   transition: transform 1s;
@@ -118,7 +121,7 @@ main {
   color: #ECEBEC;
   background-color: #2A63A6;
   height: 5rem;
-  width: 20rem;
+  width: 30rem;
   font-size: 1.5rem;
   border-radius: 5rem;
   margin: 0 2.5rem;
@@ -126,10 +129,15 @@ main {
 }
 
 .member-container:hover .member-back {
-  transform: translateY(6rem);
+  transform: translateY(9.5rem);
 }
 
 .member-container:hover .member-img-hover {
   opacity: 1;
   transition: 1s;
+}
+
+.member-portfolio a {
+  color: white;
+  text-decoration: none;
 }
