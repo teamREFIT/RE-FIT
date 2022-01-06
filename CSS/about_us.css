@@ -44,7 +44,7 @@ body {
   margin: 0;
   padding: 0;
   text-decoration: none;
-  font-family: 'GmarketSansMedium';
+  font-family: 'GmarketSansBold';
 }
 
 html {
@@ -250,8 +250,8 @@ a {
   font-size: 7rem;
   font-weight: bold;
   position: absolute;
-  top: 5%;
-  left: 50%;
+  top: 10%;
+  left: 48%;
   margin-left: -21.704rem;
   /* margin-bottom: 4rem; */
 }
@@ -285,6 +285,14 @@ a {
   font-size: 4rem;
   text-align: center;
   line-height: 30rem;
+}
+
+.environment-page-sub-text {
+  position: absolute;
+  top: 80%;
+  left: 21%;
+  font-family: 'GmarketSansLight';
+  font-size: 3rem;
 }
 
 /* environment page */
@@ -455,8 +463,9 @@ a {
 }
 
 .carbon-emission-page-main-text-box-text1 {
-  font-size: 4rem;
-  line-height: 12rem;
+  font-size: 3rem;
+  line-height: 15rem;
+  margin-right: 4rem;
 }
 
 .carbon-emission-page-main-text-box-text2 {
@@ -505,7 +514,8 @@ a {
   text-align: center;
   line-height: 20rem;
   font-size: 3rem;
-  color: navy;
+  color: white;
+  border: black;
 }
 
 
@@ -531,18 +541,21 @@ a {
   justify-items: center;
   align-items: center;
   flex-direction: column;
+  font-family: 'GmarketSansMedium';
 }
 
 .refit-page-text {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin: 3rem 0;
 }
 
 .refit-page-arrow-img {
+  width: 75rem;
   margin: 3rem 0;
 }
 
 .refit-page-ellipse-img {
+  width: 75rem;
   margin: 4rem 0;
 }
 
@@ -586,6 +599,7 @@ a {
 }
 
 .video-page-text {
+  font-family: 'GmarketSansLight';
   font-size: 2.5rem;
   width: 55rem;
   color: white;
